@@ -6,7 +6,7 @@ from urllib.parse import urlsplit, urljoin
 from multiprocessing import Pool, Queue, Manager
 import sqlite3
 
-con = sqlite3.connect("crawled.db")
+con = sqlite3.connect("crawled.db", check_same_thread=False)
 cur = con.cursor()
 cur.execute("CREATE TABLE IF NOT EXISTS crawled_links(link text PRIMARY KEY, title text, crawl_date text)")
 
