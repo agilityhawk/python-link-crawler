@@ -1,4 +1,4 @@
-# Test python crawler 
+# Python crawler PoC
 
 ## Prerequisites
 - Python 3
@@ -18,7 +18,7 @@ Provide the URL of the website to crawl as an argument to the script as shown be
 ```
 python src/runcrawler.py -w https://www.google.com/search?q=test
 
-# Alternatives
+## Alternatives
 # short options
 python src/runcrawler.py -w https://www.google.com/search?q=test -t 50 -d 2
 
@@ -26,3 +26,5 @@ python src/runcrawler.py -w https://www.google.com/search?q=test -t 50 -d 2
 # long options
 python src/runcrawler.py --website https://www.google.com/search?q=test --maxTasksPerChild 50 --maxDepth 2
 ```
+
+**Note:** This is just a quick PoC. Doesn't necessarily contain the best coding standards at the moment.
